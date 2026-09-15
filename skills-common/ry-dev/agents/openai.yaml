@@ -1,6 +1,6 @@
 interface:
   display_name: "阶段性开发治理"
-  short_description: "跨上下文管理设计、计划、开发状态与一致性收束"
+  short_description: "跨上下文管理设计、计划、任务编排、开发状态与一致性收束"
   default_prompt: "Use $ry-dev to route and govern this medium or large development task without running unrequested stages."
 
 policy:
