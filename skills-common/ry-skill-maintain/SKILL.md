@@ -2,7 +2,7 @@
 name: ry-skill-maintain
 description: "在多个 Agent 或客户端可能复用同一 Skill 的环境中，维护既有 Skill 时使用：理解该 Skill 已有的维护关系，让修改落在与其共享范围相称的位置，避免副本在无意中分叉。"
 metadata:
-  version: "1.1.0"
+  version: "1.1.1"
   ry_agent_update: source
   ry_source_path: skills-common/ry-skill-maintain
 ---
@@ -67,7 +67,10 @@ metadata:
 
 中心已推送与当前副本已刷新是两个状态：客户端未安装、命令不可用或刷新失败时，明确报告当前副本尚未更新，不宣称其他客户端已经自动同步。
 
-需要 Hermes 操作时，读取 [Hermes 客户端路由](references/clients/hermes.md)。其他客户端使用各自的原生能力；命令未知时先核实，不以手工复制伪装为原生更新成功。
+| 当前客户端 | 操作 |
+|---|---|
+| Hermes | 读取 [Hermes 客户端路由](references/clients/hermes.md)。 |
+| 其他客户端 | 使用各自的原生 Skill 管理能力；命令未知时先核实，不以手工复制伪装为原生更新成功。 |
 
 ### 私有需求：转为 `local`
 
