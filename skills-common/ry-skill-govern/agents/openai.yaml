@@ -1,7 +1,7 @@
 interface:
-  display_name: "Skill 治理"
-  short_description: "按当前意图创建、审阅、重构和迭代可维护的 Skill"
-  default_prompt: "Use $ry-skill-govern to review or improve this Skill within my requested scope, then obtain an isolated skill-creator review."
+  display_name: "Skill 优化"
+  short_description: "审阅和重构已有 Skill 的能力设计与实际表现"
+  default_prompt: "Use $ry-skill-govern to review or improve this existing Skill's capability design within my requested scope."
 
 policy:
   allow_implicit_invocation: false
