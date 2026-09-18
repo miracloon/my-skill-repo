@@ -49,6 +49,7 @@ AGENTS.md 是项目的 AI 入口文件——AI 进入项目时读的第一个文
 - 先读本文件，再按文档导航进入主链。
 - 本文件只提供入口级约束、最小识别信息和导航；不在此展开完整项目说明。
 - 若需要理解项目为什么这样设计，去读 [`docs/INTENT.md`](docs/INTENT.md)。
+- {若项目存在 [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)，保留：需要理解全局逻辑组件、职责、依赖、接口或数据所有权时读取它。否则删除本条。}
 - 若需要理解项目如何运转，去读 [`docs/WORKFLOW.md`](docs/WORKFLOW.md)。
 - 若需要理解结构、目录与边界，去读 [`docs/SPEC.md`](docs/SPEC.md)。
 - 若只是一次性小任务或普通问答，不要自动展开为完整的开发流程。
@@ -85,9 +86,12 @@ AGENTS.md 是项目的 AI 入口文件——AI 进入项目时读的第一个文
 
 | 文档 | 定位 | 什么时候读 |
 | --- | --- | --- |
+| [`CLAUDE.md`](CLAUDE.md) | Claude 专属补丁 | 由 Claude Code 自动加载时，读取其对 AGENTS 的引用和专属补充 |
 | [`docs/INTENT.md`](docs/INTENT.md) | 项目意图 | 需要理解项目目标、边界、取舍、长期方向时 |
+| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)（若存在） | 全局逻辑架构 | 需要理解组件职责、依赖、接口、数据所有权和跨模块不变量时 |
 | [`docs/WORKFLOW.md`](docs/WORKFLOW.md) | 运转拓扑 | 需要理解组件所处环节、运行环境、上下游影响时 |
 | [`docs/SPEC.md`](docs/SPEC.md) | 结构与规范 | 需要理解目录结构、模块边界、命名与维护规则时 |
+| [`docs/development/DEV_WORKFLOW.md`](docs/development/DEV_WORKFLOW.md)（若存在） | 阶段性开发文档治理 | 需要交接、State、active/history 生命周期或开发材料事实身份时 |
 
 ---
 

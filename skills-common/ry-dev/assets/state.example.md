@@ -3,7 +3,7 @@
 > Status: active | blocked | ready-for-reconcile | closed
 > Initiative: [稳定标识]
 > Evidence baseline: [可选；commit、运行环境或其他精确参照]
-> Long-term governance: unassessed | none | pending | integrated
+> Long-term governance: unassessed | pending | none | deferred | integrated
 
 ## 已验证完成
 
@@ -27,4 +27,4 @@
 
 ## 长期治理候选
 
-仅在 Reconcile 已识别出可能需要进入项目长期治理的变化时保留；说明证据、可能影响和未闭合内容。
+仅在 Reconcile 已识别出可能需要进入项目长期治理的变化时保留；说明证据、可能影响和未闭合内容。归档前把状态收束为 `integrated`、`deferred` 或 `none`，不保留 `pending`。
